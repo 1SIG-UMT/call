@@ -1,10 +1,12 @@
+html{
+  background-color: #f5f5f5;
+}
 body{
   margin: 0;
   min-width: 280px;
   font-family: Outfit;
 }
 .category-section {
-  background-color: #f3f3f3;
   position: relative;
   padding: 2.5rem 0 2.5rem;
 }
@@ -25,7 +27,7 @@ body{
   border-radius: 20px 0 0 20px;
   width: 32%;
   padding: 2rem 2rem 2.5rem;
-  background-color: #fcfcfc;
+  background-color: #fafafa;
   /* border-style: solid;
   border-width: 2px 3px 1px 2px;
   border-color: #fefefe white #eaeaea #eaeaea; */
@@ -40,8 +42,6 @@ body{
   border-color: #c9c9c9 #c0c0c0 #e0e0e0 white;
   background-color: rgba(0,0,0,0.02);
   box-shadow: -3px 6px 19px -1px rgba(0,0,0,0.15) inset, 11px -10px 19px -1px rgba(255,255,255,1) inset;
-  -webkit-box-shadow: -3px 6px 19px -1px rgba(0,0,0,0.15) inset, 11px -10px 19px -1px rgba(255,255,255,1) inset;
-  -moz-box-shadow: -3px 6px 19px -1px rgba(0,0,0,0.15) inset, 11px -10px 19px -1px rgba(255,255,255,1) inset;
 }
 .item-col{
   width: 50%;
@@ -185,14 +185,23 @@ hr {
   content: "";
   margin-top: 5px;
 }
-.deco-circle{
+a{
+  text-decoration: none;
+}
+
+footer{
+  font-size: 1rem;
+  text-align: center;
+  color: #c0c0c0;
+  margin: 1rem 0 2.5rem;
+  padding: 0 15% 0;
+}
+
+/* .deco-circle{
   content: "";
   position: absolute;
   border-radius: 100%;
   z-index: 0;
-}
-a{
-  text-decoration: none;
 }
 #deco-community-1 {
   background: radial-gradient(rgba(187,206,83,1) 10%, rgba(187,206,83,0) 70%);
@@ -207,7 +216,7 @@ a{
   bottom: 0;
   width: 300px;
   height: 300px;
-}
+} */
 
 
 @media screen and (min-width: 980px) and (max-width: 1125px) {
@@ -232,11 +241,12 @@ a{
 }
 @media screen and (max-width: 749px) {
   .category-section{
-    padding: 1rem 0 1rem;
+    padding: 1.5rem 0 1.5rem;
   }
   .container {
     flex-direction: column;
     align-items: center;
+    margin: 0 13% 0;
     padding: 0 6% 0;
   }
   .items-container {
@@ -253,8 +263,8 @@ a{
     width: 100%;
     padding: 0rem 2rem 1.4rem;
     border-radius: 0 0 20px 20px;
-    border-color: white #e0e0e0 #c0c0c0 #dfdfdf;
-    box-shadow: -3px -1px 21px -1px rgba(0,0,0,0.03) inset, 11px 10px 19px -1px rgba(255,255,255,0.3) inset;
+    border-color: #e0e0e0 #e0e0e0 #c0c0c0 #dfdfdf;
+    box-shadow: -3px -1px 21px -1px rgba(0,0,0,0.03) inset, 11px 10px 19px -1px rgba(0,0,0,0.01) inset;
   }
   .col-left {
     margin-left: 0;
