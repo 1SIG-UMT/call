@@ -548,6 +548,13 @@ input:focus {
   .submit {
     margin-top: 2rem;
   }
+  #form-area {
+    position: relative;
+    padding: 0.5rem 0 3rem;
+  }
+  .form-title, .form {
+    padding: 0 2%;
+  }
 }
 
 @media screen and (max-width: 315px) {
