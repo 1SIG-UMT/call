@@ -226,6 +226,10 @@ hr {
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
+.contact-num {
+  margin-top: 0.3rem;  
+}
+
 .contact-details {
   font-weight: 400;
   font-size: 1rem;
@@ -258,9 +262,13 @@ form {
   color: #c0c0c0;
 }
 
+.form {
+  background: transparent;
+}
+
 #form-area {
   position: relative;
-  padding: 0.1rem 2rem 3rem;
+  padding: 0.5rem 2rem 3.8rem;
 }
 
 .form-title {
@@ -269,6 +277,7 @@ form {
   display: block;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  padding-bottom: 1px;
 }
 
 #form-area:hover .form-title {
@@ -455,6 +464,10 @@ input:focus {
   background: linear-gradient(90deg, rgba(75, 180, 230, 1) 0%, rgba(31, 119, 183, 1) 100%);
 }
 
+.small-screen-br {
+  display: none;
+}
+
 /* .deco-circle{
   content: "";
   position: absolute;
@@ -550,10 +563,16 @@ input:focus {
   }
   #form-area {
     position: relative;
-    padding: 0.5rem 0 3rem;
+    padding: 0.5rem 0 3.5rem;
   }
   .form-title, .form {
-    padding: 0 2%;
+    padding: 0;
+  }
+  .form-title {
+    padding-bottom: 1px;
+  }
+  .small-screen-br {
+    display: block;
   }
 }
 
