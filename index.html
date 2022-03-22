@@ -4,14 +4,15 @@
 <head>
     <meta charset="utf-8">
     <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
-    <script>
-        window.onload = function () {
-            if(window.innerWidth <= 440) {
-                varvp = document.getElementById('viewport');
-                vp.setAttribute('content','width=440');
-            }
+    <script type="text/javascript">
+      window.onload = function () {
+        if(window.innerWidth <= 440){
+          var vp = document.getElementById('viewport');
+          var ww = window.screen.width;
+          vp.setAttribute('content', 'width=device-width, initial-scale=' + (ww/440));
         }
-     </script>
+      }
+    </script>
     <title>1TSB Emergency Resources</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
