@@ -4,7 +4,7 @@ html {
 
 body {
   margin: 0;
-  min-width: 280px;
+  min-width: 440px;
   font-family: Outfit;
 }
 
@@ -223,11 +223,13 @@ p {
 }
 
 hr {
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  height: 0;
+  padding: 0;
 }
 
 .contact-num {
-  margin-top: 0.3rem;  
+  margin-top: 0.3rem;
 }
 
 .contact-details {
@@ -251,6 +253,7 @@ a {
 
 footer {
   font-size: 1rem;
+  font-weight: 400;
   text-align: center;
   color: #c0c0c0;
   margin: 1rem 0 2.5rem;
