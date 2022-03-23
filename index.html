@@ -226,24 +226,24 @@
 
     <section id="form-area">
         <h2 class="container form-title"><span class="de-emphasize">Chaplain </span>Counseling Request</h2>
-        <form class="container form" action="https://docs.google.com/forms/d/e/1FAIpQLSdOQ9BDVr75oMXSmm6HxuySPYlxPbTK7BRPs0zthdoQsTKgXg/formResponse?embedded=true" autocomplete="off" method="post" spellcheck="false">
+        <form id="counseling-form" class="container form" autocomplete="off" method="post" spellcheck="false" target="bg-requestor">
             <div class="form-col form-col-left">
                 <div class="radio-container">
                     <label class="title-label">Your Unit</label>
                     <div class="radio-item">
-                        <input type="radio" id="hhc" class="radio" name="entry.1350853695" value="HHC 1TSB / USACISA-P / RCC-K" required>
+                        <input type="radio" id="hhc" class="radio" name="unit-entry" value="HHC 1TSB / USACISA-P" onchange="handleRadioChange()" required>
                         <label for="hhc" class="radio-label">HHC 1TSB / USACISA-P
                             <span class="radio-custom"></span>
                         </label>
                     </div>
                     <div class="radio-item">
-                        <input type="radio" id="esb" class="radio" name="entry.1350853695" value="304th ESB-E" required>
+                        <input type="radio" id="esb" class="radio" name="unit-entry" value="304th ESB-E" onchange="handleRadioChange()" required>
                         <label for="esb" class="radio-label">304th ESB-E
                             <span class="radio-custom"></span>
                         </label>
                     </div>
                     <div class="radio-item">
-                        <input type="radio" id="ssb" class="radio" name="entry.1350853695" value="41st SSB" required>
+                        <input type="radio" id="ssb" class="radio" name="unit-entry" value="41st SSB" onchange="handleRadioChange()" required>
                         <label for="ssb" class="radio-label">41st SSB
                             <span class="radio-custom"></span>
                         </label>
@@ -252,23 +252,24 @@
                 <div class="input-item">
                     <label>Name</label>
                     <p class="form-p">Leave empty to stay anonymous</p>
-                    <input type="text" name="entry.1976204530" class="text-field single-line-field" value="">
+                    <input id="name-entry" type="text" class="text-field single-line-field" value="">
                 </div>
                 <div class="input-item">
                     <label>Phone Number / Email Address</label>
                     <p class="form-p">Provide an unidentifiable POC for anonymous counseling</p>
-                    <input type="text" name="entry.1216413619" class="text-field single-line-field" value="" required>
+                    <input id="poc-entry" type="text" class="text-field single-line-field" value="" required>
                 </div>
             </div>
             <div class="form-col form-col-right">
                 <div class="textarea-item input-item">
                     <label>Subject</label>
                     <p class="form-p">Describe the subject you would like to get counseled for. You can write anything you would like to say to the Chaplain here. Chaplain and RAS guarantee 100% confidentiality.</p>
-                    <textarea name="entry.16223029" rows="9" class="text-field" required></textarea>
+                    <textarea id="subject-entry" rows="9" class="text-field" required></textarea>
                 </div>
                 <button type="submit" class="submit">Submit</button>
             </div>
         </form>
+        <iframe id="bg-requestor" name="bg-requestor" onload="alertAndReset()"></iframe>
     </section>
 
     <section id="community" class="category-section">
@@ -385,6 +386,7 @@
     </section>
 
 
+    <script src="form.js" charset="utf-8"></script>
 </body>
 <footer>
     1st Signal Brigade <br class="small-screen-br" />Unit Ministry Team 2022
