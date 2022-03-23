@@ -15,9 +15,7 @@ body {
 
 .container {
   margin: 0 10% 0;
-  /* border-radius: 20px; */
   display: flex;
-  /* box-shadow: 0 20px 30px #e8e8e8; */
   position: relative;
   z-index: 1;
 }
@@ -33,9 +31,6 @@ body {
   width: 32%;
   padding: 2rem 2rem 2.5rem;
   background-color: #fafafa;
-  /* border-style: solid;
-  border-width: 2px 3px 1px 2px;
-  border-color: #fefefe white #eaeaea #eaeaea; */
   box-shadow: rgba(33, 35, 38, 0.1) -5px 10px 10px -10px;
 }
 
@@ -145,19 +140,14 @@ body {
   opacity: 0.8;
   background: inherit;
   border-radius: inherit;
-
-  -webkit-filter: blur(6px);
   -moz-filter: blur(6px);
   -o-filter: blur(6px);
   -ms-filter: blur(6px);
   filter: blur(6px);
-
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 .item-box:hover::after {
-  -webkit-filter: blur(4px);
   -moz-filter: blur(4px);
   -o-filter: blur(4px);
   -ms-filter: blur(4px);
@@ -178,7 +168,7 @@ _:future,
   left: 1%;
 }
 
-@media not all and (min-resolution:.001dpcm) {
+@media not all and (-webkit-min-device-pixel-ratio:0), not all and (min-resolution:.001dpcm) {
   @media {
 
     .item-box:hover::after {
@@ -200,7 +190,6 @@ h2 {
 .title-name {
   color: transparent;
   text-shadow: 4.5px 4.5px 5px rgba(255, 255, 255, 0.2);
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -278,7 +267,6 @@ form {
   color: #c0c0c0;
   font-weight: 500;
   display: block;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
   padding-bottom: 1px;
 }
@@ -318,7 +306,6 @@ label {
 .input-item,
 .radio-container {
   margin-top: 1.5rem;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -336,7 +323,6 @@ label {
   cursor: pointer;
   display: block;
   padding-left: 1.5rem;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
   color: #dedede;
 }
@@ -356,8 +342,6 @@ label {
 .radio {
   position: absolute;
   opacity: 0;
-  height: 0;
-  width: 0;
 }
 
 .radio-custom {
@@ -368,7 +352,6 @@ label {
   width: 1rem;
   border-radius: 50%;
   background-color: #e0e0e0;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -459,12 +442,15 @@ input:focus {
   width: 120px;
   height: 40px;
   background: #c0c0c0;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 .submit:hover {
   background: linear-gradient(90deg, rgba(75, 180, 230, 1) 0%, rgba(31, 119, 183, 1) 100%);
+}
+
+iframe {
+  display: none;
 }
 
 .small-screen-br {
